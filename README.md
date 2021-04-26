@@ -1,2 +1,3 @@
-andrewhuyha.github.io
-Personal Website permalink: /index.html
+# andrewhuyha.github.io
+Personal Website
+permalink: /index.html
