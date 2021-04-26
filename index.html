@@ -12,15 +12,14 @@
 <body>
 
 	<!--Navigation Bar-->
-	<header class = "sticky" >
+	<header>
 		<a href="#" class = "logo">Home</a>
-		<div class = "toggle" onclick= "toggleMenu()" ></div>
-		<ul class = "menu"></ul>
-		<ul>
-			<li><a class = "left" href="#about">ABOUT</a></li>
-			<li><a class = "left" href="#education">EDUCATION</a></li>
-			<li><a class = "left" href="#projects">PROJECTS</a></li>
-			<li><a class = "left" href="#contact">CONTACT</a></li>
+		<div class = "toggle" onclick= "toggleMenu();" ></div>
+		<ul class = "menu">
+			<li><a class = "left" href="#about" onclick= "toggleMenu();">ABOUT</a></li>
+			<li><a class = "left" href="#education" onclick= "toggleMenu();">EDUCATION</a></li>
+			<li><a class = "left" href="#projects" onclick= "toggleMenu();">PROJECTS</a></li>
+			<li><a class = "left" href="#contact" onclick= "toggleMenu();">CONTACT</a></li>
 			<li><a class = "left" class = "resume" href="resume.pdf">RESUME</a></li>
 		</ul>
 	</header>
@@ -48,7 +47,7 @@
 			<div class = "contextBx w50">
 				<p>My name is Andrew and I'm Vietnamese-American, my dad is from the city of Danang while my mom is from what was formerly Saigon. I was born and raised in Orange Country. I'm currently a third year at the <span style="color: #FFA500"><b>California State University, Fullerton</b></span> where I'm studying computer science and business. I am passionate to be able to help people and progress society forward technology wise through innovation and enhance productivity. </p> <br><br>
 
-				<p>I began coding 2015 with a small intro course in high school, taking on small projects such as creating retro styled games such as Pong, Breakout, Snake and have been programing ever since. </p> <br><br>
+				<p>I began coding 2015 with a small intro course in high school, taking on small projects such as creating retro styled games such as Pong, Breakout, Snake and have been programing ever since. I've picked up a variety of languages and tools to tackle different problems.</p> <br><br>
 
 				<p>
 				In my free time, I enjoy reading, spending time with friends and family or playing video games such as VALORANT or Super Smash Bros. I also love being outdoors whether its camping, hiking, or playing a variety of different sports such as basketball, football, or spikeball at the local park. </p>
@@ -158,19 +157,21 @@
  			<h2>Contact</h2>
  		</div>
  		<div class = "content"></div>
- 		<p>I created this website to track my growth over the years, and for the years to come, and to reflect on the past. I am currently exploring for any new opportunities in tech. Whether you have a question or just want to chat, my email is always open. I will try to get back to you ASAP!</p>
- 		<a href="mailto:andrewhuyha@yahoo.com" class = "btn" >Get in Touch</a>
- 		<br><br><br><br><br><br><br><br><br>
+ 		<p>I created this website to track my growth over the years, and for the years to come, and to reflect on the past. I am currently exploring for any new opportunities in tech. Whether you have a question or just want to chat, my email is always open and I would love to connect.  I will try to get back to you ASAP!</p><br>
+ 		<p style="text-align: center;">Phone Number: 714-383-0889</p><br>
+ 		<p style="text-align: center;">Email: andrewhuyha@yahoo.com</p>
+ 		<br><br><br><br><br>
  		<p style="text-align: center;">Thanks for Visiting!</p>
  		<p style="text-align: center;">Built & Designed by Andrew Ha ツ</p>
 
  		<!--Social Media Icons-->
-	<div class = "SocialMedia" style="text-align:right;">
+	<div class = "SocialMedia" style="text-align:center;">
 		<ul>
 			<a href="https://www.instagram.com/andrewhuyha/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 			<a href="https://github.com/andrewhuyha"><i class="fa fa-github" aria-hidden="true"></i></a>
 			<a href="https://www.linkedin.com/in/andrewhuyha/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 			<a href="https://open.spotify.com/user/_andrewha_?si=KSe6nYMOQyewzFAbjEuIHg"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+			<a href="https://andrewhuyha.medium.com/"><i class="fa fa-medium" aria-hidden="true"></i></a>
 
 		</ul>	
 	</div>
@@ -178,17 +179,16 @@
  	</section>
 
  	
- 	
 
  	<!--Scripts for Navigation Bar and Toggle for Mobile-->
  	<script type="text/javascript">
-		window.addEventListener('scroll', function(){
-			var header = document.querySelector('header');
-			header.classList.toggle('sticky', window.scrollY > 0);
-		});
-	</script>
-	<script type="text/javascript">
+ 		window.addEventListener('scroll', function(){
+ 			var header = document.querySelector('header');
+ 			header.classList.toggle('sticky', window.scrollY > 0);
+ 		});
+ 	</script>
 
+	<script type="text/javascript">
 	function toggleMenu(){
 		var menuToggle = document.querySelector('.toggle');
 		var menu = document.querySelector('.menu');

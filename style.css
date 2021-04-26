@@ -67,7 +67,7 @@ section{
  	align-items: center;
  	transition: 0.5s;
  }
- header .sticky{
+ header.sticky{
  	background: #fff;
  	padding: 20px 100px;
  	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
@@ -120,7 +120,7 @@ section{
  }
  header .sticky ul li a
  {
- 	color: 111;
+ 	color: #FFF;
  }
 .heading{
 	width: 100%;
@@ -293,7 +293,7 @@ img{
 	} 
 
 /*Responsive*/
-@media(max-width: 100 0px)
+@media(max-width: 991px)
 {
 	header,
 	header.sticky
@@ -304,14 +304,14 @@ img{
 .menu{
 	position: fixed;
 	top: 75px;
-	left: 0;
+	left: -100%;
 	display: block;
 	padding: 100px 50px;
 	text-align: center;
 	width: 100%;
 	height: 100vh;
 	background: #fff;
-	transition: 0.5s
+	transition: 0.5s;
 	z-index: 999;
 	border-top: 1px solid rgba(0,0,0,0.2);
 }
@@ -320,7 +320,7 @@ img{
 }
 header ul li a{
 	color: #111;
-	font-size: 24px;
+	font-size: 30px;
 	margin: 10px;
 }
 .toggle{
@@ -345,5 +345,21 @@ header.sticky .toggle{
 }
 section{
 	padding: 100px 50px;
+}
+.banner h2{
+	font-size: 1.5em;
+}
+.banner h3{
+	font-size: 3em;
+}
+.banner h4{
+	font-size: 4em;
+}
+.content{
+	flex-direction: column;
+}
+.w50{
+	margin-bottom: 20px;
+	min-height: 50%;
 }
 }
