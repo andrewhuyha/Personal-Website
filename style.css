@@ -19,7 +19,7 @@ section{
 
 }
 .banner h2{
-	font-size: 5em;
+	font-size: 3em;
 	color: #000000;
 	font-weight: 500;
 	line-height: 1.5em;
@@ -33,6 +33,10 @@ section{
 	color: #00788C;
 	font-weight: 500;
 }
+.banner h4{
+	font-size: 7em;
+	font-weight: 700l
+}
 .btn{
 	position: relative;
 	background: #210070;
@@ -45,7 +49,6 @@ section{
 	text-decoration: none;
 	letter-spacing: 2px;
 	font-weight: 500;
-	justify-content: center;
 }
 .typewriter_cursor{
     -webkit-animation: Typewriter-cursor 1s infinite;
@@ -123,7 +126,7 @@ section{
 	width: 100%;
 	text-align: center;
 	margin-bottom: 30px
-	color: #111;
+	color: #c1c1c1;
 }
 .heading h2{
 	font-weight: 600;
@@ -288,6 +291,7 @@ img{
 		border-radius: 50%;
 		transition: .5s;
 	} 
+
 /*Responsive*/
 @media(max-width: 100 0px)
 {
@@ -300,7 +304,7 @@ img{
 .menu{
 	position: fixed;
 	top: 75px;
-	left: -100;
+	left: 0;
 	display: block;
 	padding: 100px 50px;
 	text-align: center;
