@@ -160,6 +160,15 @@ section{
 	max-width: 80%
 
 }
+.top{
+	border-radius: 500rem;
+	float: right;
+	max-width: 20%;
+	height: auto;
+	display: inline-block;
+
+
+}
 img{
 	max-width: 100%;
 }
@@ -350,7 +359,7 @@ section{
 	font-size: 1.5em;
 }
 .banner h3{
-	font-size: 3em;
+	font-size: 2.5em;
 }
 .banner h4{
 	font-size: 4em;
