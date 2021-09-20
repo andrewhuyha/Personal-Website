@@ -3,22 +3,22 @@ var app = document.getElementById('app');
 var typewriter = new Typewriter(app, {
     loop: true,
     delay:50,
-    deleteSpeed:5
+    deleteSpeed:10
 });
 
 typewriter.typeString('Welcome to my website!')
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("Student at Cal State Fullerton.")
+    .typeString("Software Engineer")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("Studying computer science and business.")
+    .typeString("Student at Cal State Fullerton")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("Software Engineer.")
+    .typeString("Studying computer science and business")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
@@ -26,7 +26,7 @@ typewriter.typeString('Welcome to my website!')
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("Interested in sports/eSports.")
+    .typeString("Sports/eSports Enthusiast")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
@@ -37,8 +37,4 @@ typewriter.typeString('Welcome to my website!')
     .typeString("Thanks for Visiting!")
     .pauseFor(1000)
     .deleteAll()
-    .typeString("SHEEEEEEEEEEEEEEEEEESH")
-    .pauseFor(1000)
-    .deleteAll()
-    .pauseFor(500)
     .start();

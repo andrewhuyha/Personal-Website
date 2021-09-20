@@ -151,6 +151,7 @@ section{
 .w50{
 	min-width: 50%;
 }
+
 #app{
 	font-size: 250%;
 	font-color: #210070;
@@ -158,6 +159,7 @@ section{
 .me{
 	padding-left: 200px;
 	max-width: 80%
+	
 
 }
 .top{
