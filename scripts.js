@@ -34,7 +34,4 @@ typewriter.typeString('Welcome to my website!')
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("Thanks for Visiting!")
-    .pauseFor(1000)
-    .deleteAll()
     .start();
