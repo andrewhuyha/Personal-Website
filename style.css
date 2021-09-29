@@ -157,10 +157,20 @@ section{
 	font-color: #210070;
 }
 .me{
+	poistion: relative;
 	padding-left: 200px;
-	max-width: 80%
+	max-width: 100%
+	border: 5px solid #555;
 
-
+}
+.me:before{
+	position: absolute;
+	content:  '';
+	right: -30px;
+	top: 30px;
+	border:  10px solid rgba(255, 255, 255, 0.5);
+	width: 100%;
+	height: 100%;
 }
 .floatRight{
 	float:right;
