@@ -310,8 +310,19 @@ img .circular{
 		transition: .5s;
 	} 
 
+.reveal{
+	position: relative;
+	transform:  translateY(150px);
+	opacity: 0;
+	transition: all 2s ease;
+}
+.reveal.active{
+	transform:  translateY(0px);
+	opacity: 1;
+}
+
 /*Responsive*/
-@media(max-width: 991px)
+@media(max-width: 900px)
 {
 	header,
 	header.sticky

@@ -40,7 +40,7 @@
 	</section>
 
 	<!--About Section-->
-	<section class = "about" id = "about">
+	<section class = "about reveal" id = "about">
 		<div class = "heading white">
 			<h2>About Me</h2>
 		</div>
@@ -54,7 +54,7 @@
 				I'm a firm believer in growth mindset, and love exploring different ideas about leadership, personal development, and productivty. 
 				</p>
 				<br>
-				<a href="https://deciduous-road-fff.notion.site/98279854d93445b181a0d3da687ee173?v=0e025320455e44939c930187f4b9b447" style = "text-decoration: none;"> &ensp; &ensp;&ensp;&#128218;; Personal Reading List</a>
+				<a href="https://deciduous-road-fff.notion.site/98279854d93445b181a0d3da687ee173?v=0e025320455e44939c930187f4b9b447" style = "text-decoration: none;"> &ensp; &ensp;&ensp;&#128218;; <b>Personal Reading List</b></a>
 				<br>
 				<br>
 
@@ -71,7 +71,7 @@
 	</section>
 
 	<!--Education and Skills Section-->
- 	<section class = "education" id = "education">
+ 	<section class = "education reveal" id = "education">
  		<div class = "heading">
  			<h2>Education</h2>
  			<div class= "containter row" id = "education-title">
@@ -136,7 +136,7 @@
  	</section>
 
  	<!--Project Section-->
- 	<section class = "projects" id = "projects">
+ 	<section class = "projects reveal" id = "projects">
  		<div class = "heading white">
  			<h2>Projects</h2>
  			<p>Here are some projects that I have completed!</p>
@@ -162,7 +162,7 @@
  	</section>
 
  	<!--Contact Section-->
- 	<section class = "Contact" id = "contact">
+ 	<section class = "Contact reveal" id = "contact">
  		<div class = "heading">
  			<h2>Contact</h2>
  		</div>
@@ -209,6 +209,32 @@
 
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script src="scripts.js"></script>
+
+
+<!--Scripts for Scroll Reveal Animation-->
+<script type="text/javascript">
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+	var reveals = document.querySelectorAll('.reveal');
+
+	for(var i = 0; i < reveals.length; i++){
+		var windowheight = window.innerHeight;
+		var revealtop = reveals[i].getBoundingClientRect().top;
+		var revealpoint = 150;
+
+		if(revealtop < windowheight - revealpoint){
+			reveals[i].classList.add('active');
+		}
+		else{
+			reveals[i].classList.remove('active');
+		}
+	}
+}
+</script>
+
+
+
 </body>
 </html>
 
