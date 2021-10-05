@@ -6,7 +6,7 @@ var typewriter = new Typewriter(app, {
     deleteSpeed:10
 });
 
-typewriter.typeString('Computer Science and Business Student')
+typewriter.typeString('Computer Science Student')
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
