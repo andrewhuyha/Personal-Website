@@ -161,7 +161,7 @@ section{
 	max-width: 80%;
 }
 .main{
-	max-width: 40%;
+	max-width: 35%;
 	float: middle;
 	clip-path: circle();
 
@@ -311,6 +311,9 @@ img .circular{
 		border-radius: 50%;
 		transition: .5s;
 	} 
+.footer{
+	  text-align: center;
+}
 
 .reveal{
 	position: relative;
