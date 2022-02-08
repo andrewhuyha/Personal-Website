@@ -158,8 +158,12 @@ section{
 }
 .me{
 	padding-left: 200px;
-	max-width: 80%
-
+	max-width: 80%;
+}
+.main{
+	max-width: 40%;
+	float: middle;
+	clip-path: circle();
 
 }
 .floatRight{
@@ -172,8 +176,6 @@ section{
 	max-width: 20%;
 	height: auto;
 	display: inline-block;
-
-
 }
 img{
 	max-width: 100%;
